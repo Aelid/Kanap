@@ -8,12 +8,12 @@ console.table('LOCAL STORAGE', produitLocalStorage);
 const positionEmptyCart = document.querySelector("#cart__items");
 
 async function getArticles() {
-    var articlesCatch = await fetch("https://TON-BACKEND-KANAP.onrender.com/api/products")
+    var articlesCatch = await fetch("https://kanap-fgsu.onrender.com/api/products")
     return await articlesCatch.json();
 }
 
 async function getArticle(productId) {
-    var articlesCatch = await fetch("https://TON-BACKEND-KANAP.onrender.com/api/products/" + productId)
+    var articlesCatch = await fetch("https://kanap-fgsu.onrender.com/api/products/" + productId)
     return await articlesCatch.json();
 }
 
@@ -349,7 +349,7 @@ function commanderLePanier() {
                     'Accept': "application/json", "Content-Type": "application/json"
                 },
             };
-            fetch("https://TON-BACKEND-KANAP.onrender.com/api/products/order", options)
+            fetch("https://kanap-fgsu.onrender.com/api/products/order", options)
                 .then((resp) => resp.json())
                 .then((data) => {
                     console.log("data", data);

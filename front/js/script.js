@@ -1,7 +1,7 @@
 fillSection();
 // Récupération des articles de l'API
 async function getArticles() {
-    var articlesCatch = await fetch("https://TON-BACKEND-KANAP.onrender.com/api/products")
+    var articlesCatch = await fetch("https://kanap-fgsu.onrender.com/api/products")
     return await articlesCatch.json();
 }
 // Mise en places des données de l'API dans le DOM

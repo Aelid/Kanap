@@ -10,7 +10,7 @@ getArticle();
 
 // On récupere les articles dans l'API
 function getArticle() {
-    fetch("http://localhost:3000/api/products/" + idProduct)
+    fetch("https://kanap-fgsu.onrender.com/api/products/" + idProduct)
         .then((res) => {
             return res.json();
         })
